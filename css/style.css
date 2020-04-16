@@ -30,12 +30,18 @@ body {
   background-position: center center;
   position: relative;
   padding: 35px 20px 85px;
+  font-size: 10px;
 }
 
 @media (max-width: 640px) {
  .welcome {
    background-image: url("../images/football_767.jpg");
+   }
+}
 
+@media (min-width: 641px) and (max-width: 960px) {
+ .welcome {
+   background-image: url("../images/football_1280.jpg");
    }
 }
  
@@ -77,23 +83,43 @@ body {
 .welcome-title {
   color: #ffffff;
   text-transform: uppercase;
-  font-size: 25px;
   margin: auto;
 }
 
 .title {
   display: block;
-  width: 12em;
+  margin: auto;
+  width: 10em;
 }
+
 
 .title:last-child {
   box-sizing: border-box;
-  padding: 22px 50px;
 }
 
+@media (max-width: 640px) {
+
+.welcome-title {
+  font-size: 2.5em;
+  }
+
+.title:last-child {
+  padding: 22px 0 0 40px;
+}
+}
+
+@media (min-width: 641px) and (max-width: 960px) {
+
+.welcome-title {
+  font-size: 4.5em;
+  }
+
+.title:last-child {
+  padding: 10px 0 0 70px;
+}
+}
 
 .container-services {
-  flex-wrap: wrap;
   margin: 85px auto 0;
 }
 
@@ -101,14 +127,12 @@ body {
   text-transform: uppercase;
   font-size: 10px;
   padding: 0;
-  width: 100%;
 }
 
 .service-item {
-  border-radius: 23px;
+  
   background-color: #5c3eb2;
   margin-top: 14px;
-  padding: 5px;
 }
 
 .service-content {
@@ -142,7 +166,7 @@ body {
 
 .service-name {
   font-weight: 700;
-   display: block;
+  display: block;
 }
 
 .visually-hidden {
@@ -154,6 +178,39 @@ body {
 
 .service-link-googleplay {
 
+}
+
+@media (max-width: 640px) {
+  .services {
+  width: 100%;
+  }
+
+  .service-item {
+  border-radius: 23px;
+  padding: 5px;
+  }
+
+  .services-img {
+  margin-right: 5px;
+  }
+}
+
+@media (min-width: 641px) and (max-width: 960px) {
+
+.services {
+  display: flex;
+  justify-content: center;
+  }
+
+.service-item {
+  border-radius: 30px;
+  padding: 15px 40px;
+  margin-right: 15px;
+  }
+
+.services-img { 
+  margin-right: 15px;
+  }
 }
 
 .main {
@@ -170,7 +227,7 @@ body {
 }
 
 .container-branch-heading {
-   padding: 20px;
+
 }
 
 .branch-heading {
@@ -178,10 +235,11 @@ body {
   color: #e8e8e8;
   font-size: 56px;
   margin: 0;
+
 }
 
 .branch-preview {
-  margin: auto;
+  
 }
 
 .branch-img {
@@ -190,6 +248,7 @@ body {
 
 .purpose {
   padding: 20px;
+  width: 100%;
 }
 
 .connection {
@@ -252,6 +311,58 @@ body {
 .growth-athlete {
   background-color: #5c3eb2;
   color: #ffffff;
+}
+
+@media (max-width: 640px) {
+
+.container-branch-heading {
+   padding: 7%;
+   width: 100%
+}
+
+.container-branch-preview {
+  margin: auto;
+  }
+}
+
+@media (min-width: 641px) and (max-width: 960px) {
+
+.container-branch-heading-athlets {
+   margin-left: 38%;
+   padding: 20px;
+  }
+
+.container-branch-preview-athlete {
+  position: relative;
+  }
+
+.branch-preview-athlete {
+  position: absolute;
+  top: 65px;
+  left: -740px;
+  }
+
+.container-purpose-athlets {
+  padding: 36px 20px 0 38%;
+  }
+
+.container-branch-heading-players {
+  padding: 60px 40px 0;
+  }
+
+.branch-players {
+  position: relative;
+  }
+
+.branch-preview-players {
+  position: absolute;
+  top: -20px;
+  right: -1px;
+  }
+
+.container-purpose-players {
+  padding: 0 45% 0 20px;
+  }
 }
 
 .container-guide {
@@ -319,13 +430,6 @@ body {
   position: relative;
   padding: 100px 20px 10px;
 }
-
-@media (max-width: 640px) {
- .footer {
-   background-image: url("../images/game_767.jpg");
-
-   }
-}
  
 .footer::after {
   content: "";
@@ -364,26 +468,53 @@ body {
 
 .motto {
   margin: 60px 0;
+  font-size: 10px;
 }
 
 .motto-show, .motto-download {
   display: block;
   text-transform: uppercase;
   text-align: center;
+  font-weight: 700;
 }
 
 .motto-download {
   color: #ffffff;
-  font-weight: 700;
-  font-size: 32px;
 }
 
 .motto-show {
   color: #a69ec7;
-  font-weight: 700;
-  font-size: 14px;
 }
 
 .container-logo-text-footer {
   margin-top: 80px;
+}
+
+@media (max-width: 640px) {
+
+.footer {
+  background-image: url("../images/game_767.jpg");
+  }
+
+.motto-download {
+  font-size: 3.2em;
+  }
+
+.motto-show {
+  font-size: 1.4em;
+  }
+}
+
+@media (min-width: 641px) and (max-width: 960px) {
+.footer {
+  background-image: url("../images/game_1280.jpg");
+  }
+
+.motto-download {
+  font-size: 6.5em;
+  }
+
+.motto-show {
+  font-size: 2.4em;
+  }
 }
